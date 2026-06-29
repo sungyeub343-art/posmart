@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="pageTitle">동 포스기 설치 | 여비POS</title>
+  <meta id="pageMeta" name="description" content="" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="region.css" />
+  <link rel="stylesheet" href="dong.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="wrap header-wrap">
+    <a href="index.html" class="logo">여비<span>POS</span></a>
+    <nav class="gnb" id="gnb">
+      <a href="index.html#products">제품소개</a>
+      <a href="index.html#solutions">업종별 솔루션</a>
+      <a href="index.html#pricing">요금안내</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#reviews">설치후기</a>
+      <a href="areas.html">지역별 설치 안내</a>
+    </nav>
+    <a href="tel:010-2928-3614" class="header-cta">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.32.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.27.2 2.48.57 3.58-.11.35-.02.74-.47 1.22z"/></svg>
+      전화 상담
+    </a>
+    <button class="ham" id="ham" aria-label="메뉴">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html#products" class="mnav-link">제품소개</a>
+    <a href="index.html#solutions" class="mnav-link">업종별 솔루션</a>
+    <a href="index.html#pricing" class="mnav-link">요금안내</a>
+    <a href="index.html#faq" class="mnav-link">FAQ</a>
+    <a href="index.html#reviews" class="mnav-link">설치후기</a>
+    <a href="areas.html" class="mnav-link">지역별 설치 안내</a>
+    <a href="tel:010-2928-3614" class="mnav-call">📞 010-2928-3614</a>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="rp-bc-wrap">
+  <div class="wrap">
+    <nav class="rp-bc" id="breadcrumb">
+      <a href="index.html">홈</a>
+      <span>›</span>
+      <a href="areas.html">지역별 설치 안내</a>
+      <span>›</span>
+      <a id="bcSido" href="#">시·도</a>
+      <span>›</span>
+      <a id="bcCity" href="#">시·군·구</a>
+      <span>›</span>
+      <span id="bcDong">동·읍·면</span>
+    </nav>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="rp-hero">
+  <div class="wrap">
+    <!-- 탭 -->
+    <div class="rp-tabs" id="prodTabs">
+      <button class="rp-tab on" data-prod="pos">💳 포스기·카드단말기</button>
+      <button class="rp-tab" data-prod="table">🍽 테이블오더</button>
+      <button class="rp-tab" data-prod="kiosk">🤖 무인자판기</button>
+    </div>
+    <div class="rp-hero-inner">
+      <div class="rp-hero-img-wrap">
+        <img id="prodImg" src="img-pos.jfif" alt="포스기 설치" />
+        <div class="rp-live-badge">● LIVE 설치중</div>
+      </div>
+      <div class="rp-hero-info">
+        <div class="rp-bc-tag" id="heroTag">서비스 지역</div>
+        <h1 id="heroTitle">동 포스기·카드단말기 설치 전문</h1>
+        <p id="heroDesc">여비POS가 빠르고 정확하게 설치해 드립니다.</p>
+        <ul class="rp-check-list">
+          <li>✅ 당일 설치 가능</li>
+          <li>✅ 월 렌탈 방식 부담 없이 시작</li>
+          <li>✅ 전담 기사 1:1 A/S</li>
+          <li>✅ 설치 후 사용법 교육 포함</li>
+        </ul>
+        <div class="rp-cta-row">
+          <a href="tel:010-2928-3614" class="btn-primary">📞 010-2928-3614</a>
+          <a href="index.html#pricing" class="btn-outline">요금 확인</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 특징 -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-hd">
+      <p class="sec-tag" id="featTag">지역 서비스</p>
+      <h2 id="featTitle">왜 여비POS를 선택하나요?</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-ic">🚀</div>
+        <h4>당일 설치</h4>
+        <p>오전 주문 시 당일 오후 설치 완료</p>
+      </div>
+      <div class="why-card">
+        <div class="why-ic">💰</div>
+        <h4>합리적인 월 렌탈</h4>
+        <p>포스기 월 21,000원부터 시작</p>
+      </div>
+      <div class="why-card">
+        <div class="why-ic">🔧</div>
+        <h4>전담 A/S</h4>
+        <p>전담 기사 배정으로 빠른 문제 해결</p>
+      </div>
+      <div class="why-card">
+        <div class="why-ic">📊</div>
+        <h4>매출 관리</h4>
+        <p>실시간 매출 통계·재고 관리 제공</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 요금 -->
+<section class="section bg-gray">
+  <div class="wrap">
+    <div class="sec-hd">
+      <p class="sec-tag">Pricing</p>
+      <h2>월 렌탈 요금</h2>
+    </div>
+    <div class="price-table-wrap">
+      <table class="price-table">
+        <thead>
+          <tr><th>제품</th><th>설치비</th><th>월 렌탈료</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>카드단말기</td><td class="free">무료</td><td class="amount">9,900원</td></tr>
+          <tr><td>포스기</td><td class="free">무료</td><td class="amount">21,000원</td></tr>
+          <tr><td>키오스크</td><td class="free">무료</td><td class="amount">33,000원</td></tr>
+          <tr><td>토스페이결제기</td><td class="free">무료</td><td class="amount">11,000원</td></tr>
+          <tr><td>테이블오더</td><td class="free">무료</td><td class="amount">14,000원</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 키워드 -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-hd">
+      <p class="sec-tag">Keywords</p>
+      <h2 id="kwTitle">관련 키워드</h2>
+    </div>
+    <div class="rp-keywords" id="keywords"></div>
+  </div>
+</section>
+
+<!-- 같은 구 다른 동 -->
+<section class="section bg-gray">
+  <div class="wrap">
+    <div class="sec-hd">
+      <p class="sec-tag">Nearby Areas</p>
+      <h2 id="nearbyTitle">같은 지역 다른 동·읍·면</h2>
+    </div>
+    <div class="rp-nearby" id="nearbyDong"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="wrap cta-inner">
+    <div>
+      <h2 id="ctaTitle">지금 바로 설치 문의하세요</h2>
+      <p id="ctaDesc">빠른 상담·당일 설치 가능합니다</p>
+    </div>
+    <div class="cta-btns">
+      <a href="tel:010-2928-3614" class="cta-phone">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.32.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.27.2 2.48.57 3.58-.11.35-.02.74-.47 1.22z"/></svg>
+        010-2928-3614
+      </a>
+      <a href="http://pf.kakao.com" class="cta-kakao">💬 카카오톡 상담</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="ft-brand">
+      <div class="ft-logo">여비<span>POS</span></div>
+      <p>전국 소상공인을 위한<br>포스기·카드단말기 설치 전문</p>
+      <a href="tel:010-2928-3614" class="ft-tel">010-2928-3614</a>
+      <small>📞 24시간 365일 언제든지 연락주세요</small>
+    </div>
+    <div class="ft-links">
+      <h5>서비스</h5>
+      <a href="index.html#products">제품소개</a>
+      <a href="index.html#solutions">업종별 솔루션</a>
+      <a href="index.html#pricing">요금안내</a>
+      <a href="index.html#reviews">설치후기</a>
+    </div>
+    <div class="ft-links">
+      <h5>고객지원</h5>
+      <a href="index.html#faq">자주묻는질문</a>
+      <a href="tel:010-2928-3614">전화 상담</a>
+      <a href="#">카카오톡 상담</a>
+      <a href="areas.html">지역별 안내</a>
+    </div>
+    <div class="ft-links">
+      <h5>약관</h5>
+      <a href="#">이용약관</a>
+      <a href="#">개인정보처리방침</a>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <div class="wrap">
+      <p>상호명: 여비POS &nbsp;|&nbsp; 대표: 남성엽</p>
+      <p>© 2025 여비POS. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:010-2928-3614" class="float-btn" aria-label="전화 상담">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.32.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.27.2 2.48.57 3.58-.11.35-.02.74-.47 1.22z"/></svg>
+</a>
+
+<script src="dong-data.js"></script>
+<script>
+// ── Header
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 10), { passive: true });
+document.getElementById('ham').addEventListener('click', () => document.getElementById('mobileNav').classList.toggle('open'));
+document.addEventListener('click', e => { if (!header.contains(e.target)) document.getElementById('mobileNav').classList.remove('open'); });
+
+// ── URL params
+const params  = new URLSearchParams(window.location.search);
+const sido    = params.get('sido')  || '';
+const city    = params.get('city')  || '';
+const dong    = params.get('dong')  || '';
+let   prod    = params.get('prod')  || 'pos';
+
+// ── 제품 정보
+const PROD_IMG = { pos:'img-pos.jfif', table:'img-table.jfif', kiosk:'img-vending.jfif' };
+const PROD_TEXT = {
+  pos: {
+    title: (s,c,d) => `${d} 포스기·카드단말기 설치 전문 | 여비POS`,
+    h1:   (s,c,d) => `${d} 포스기·카드단말기 설치 전문`,
+    desc: (s,c,d) => `${c} ${d} 포스기·카드단말기 설치 전문 여비POS. 월 9,900원 카드단말기 / 21,000원 포스기 설치. 당일 설치·A/S 가능.`,
+    feat: (s,c,d) => `${d} 포스기 설치 서비스`,
+    cta:  (s,c,d) => `${d} 포스기 설치 지금 문의`
+  },
+  table: {
+    title: (s,c,d) => `${d} 테이블오더 설치 전문 | 여비POS`,
+    h1:   (s,c,d) => `${d} 테이블오더 설치 전문`,
+    desc: (s,c,d) => `${c} ${d} 테이블오더 설치 전문 여비POS. 월 14,000원 테이블오더 설치. 주문·결제 한번에 해결.`,
+    feat: (s,c,d) => `${d} 테이블오더 설치 서비스`,
+    cta:  (s,c,d) => `${d} 테이블오더 설치 지금 문의`
+  },
+  kiosk: {
+    title: (s,c,d) => `${d} 무인자판기·키오스크 설치 전문 | 여비POS`,
+    h1:   (s,c,d) => `${d} 무인자판기·키오스크 설치 전문`,
+    desc: (s,c,d) => `${c} ${d} 무인자판기·키오스크 설치 전문 여비POS. 월 33,000원 키오스크. 24시간 무인 운영.`,
+    feat: (s,c,d) => `${d} 무인자판기 설치 서비스`,
+    cta:  (s,c,d) => `${d} 무인자판기 설치 지금 문의`
+  }
+};
+
+const SIDO_LABELS = {
+  '서울':'서울특별시','인천':'인천광역시','경기':'경기도','부산':'부산광역시',
+  '대구':'대구광역시','대전':'대전광역시','광주':'광주광역시','울산':'울산광역시',
+  '세종':'세종특별자치시','경북':'경상북도','경남':'경상남도','전북':'전라북도',
+  '전남':'전라남도','충북':'충청북도','충남':'충청남도','강원':'강원특별자치도','제주':'제주특별자치도'
+};
+
+function fillContent(p) {
+  const tx   = PROD_TEXT[p] || PROD_TEXT.pos;
+  const sL   = SIDO_LABELS[sido] || sido;
+
+  // <title> & <meta>
+  document.getElementById('pageTitle').textContent = tx.title(sido, city, dong);
+  document.getElementById('pageMeta').content = tx.desc(sido, city, dong);
+
+  // breadcrumb
+  document.getElementById('bcSido').textContent = sL;
+  document.getElementById('bcSido').href = `areas.html`;
+  document.getElementById('bcCity').textContent = city;
+  document.getElementById('bcCity').href = `region.html?sido=${encodeURIComponent(sido)}&city=${encodeURIComponent(city)}&prod=${p}`;
+  document.getElementById('bcDong').textContent = dong;
+
+  // hero
+  document.getElementById('heroTag').textContent = `${sL} ${city} ${dong}`;
+  document.getElementById('heroTitle').textContent = tx.h1(sido, city, dong);
+  document.getElementById('heroDesc').textContent = tx.desc(sido, city, dong);
+  document.getElementById('prodImg').src = PROD_IMG[p] || PROD_IMG.pos;
+  document.getElementById('prodImg').alt = tx.h1(sido, city, dong);
+
+  // feat
+  document.getElementById('featTag').textContent = tx.feat(sido, city, dong);
+
+  // keywords
+  const kwArr = [
+    `${dong} 포스기`, `${dong} 카드단말기`, `${city} ${dong} 포스기 설치`,
+    `${dong} 테이블오더`, `${dong} 무인자판기`, `${city} ${dong} 키오스크`,
+    `${sL} 포스기`, `${city} 포스기 설치`, `${dong} 포스기 렌탈`
+  ];
+  document.getElementById('kwTitle').textContent = `${dong} 관련 검색 키워드`;
+  document.getElementById('keywords').innerHTML = kwArr.map(k =>
+    `<span class="rp-kw">${k}</span>`
+  ).join('');
+
+  // CTA
+  document.getElementById('ctaTitle').textContent = tx.cta(sido, city, dong);
+  document.getElementById('ctaDesc').textContent = `${sL} ${city} ${dong} 빠른 상담·당일 설치 가능합니다`;
+
+  // nearby dongs
+  const dongs = (DONG_DATA[sido] || {})[city] || [];
+  document.getElementById('nearbyTitle').textContent = `${city} 다른 동·읍·면`;
+  const others = dongs.filter(d => d !== dong).slice(0, 20);
+  if (others.length) {
+    document.getElementById('nearbyDong').innerHTML = others.map(d =>
+      `<a class="rp-near-tag" href="dong.html?sido=${encodeURIComponent(sido)}&city=${encodeURIComponent(city)}&dong=${encodeURIComponent(d)}&prod=${p}">${d}</a>`
+    ).join('');
+  } else {
+    document.getElementById('nearbyDong').innerHTML =
+      `<a class="rp-near-tag" href="region.html?sido=${encodeURIComponent(sido)}&city=${encodeURIComponent(city)}&prod=${p}">${city} 전체 보기</a>`;
+  }
+}
+
+// ── 탭 전환
+document.querySelectorAll('.rp-tab').forEach(btn => {
+  if (btn.dataset.prod === prod) btn.classList.add('on');
+  else btn.classList.remove('on');
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.rp-tab').forEach(b => b.classList.remove('on'));
+    btn.classList.add('on');
+    prod = btn.dataset.prod;
+    const url = new URL(window.location);
+    url.searchParams.set('prod', prod);
+    history.replaceState(null, '', url);
+    fillContent(prod);
+  });
+});
+
+fillContent(prod);
+</script>
+</body>
+</html>

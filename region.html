@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="pageTitle">포스기·카드단말기 설치 전문 | 여비POS</title>
+  <meta name="description" id="pageDesc" content="여비POS - 설치비 무료, 평균 4일 이내 설치, 24시간 AS" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="region.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="wrap header-wrap">
+    <a href="index.html" class="logo">여비<span>POS</span></a>
+    <nav class="gnb" id="gnb">
+      <a href="index.html#products">제품소개</a>
+      <a href="index.html#solutions">업종별 솔루션</a>
+      <a href="index.html#pricing">요금안내</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#reviews">설치후기</a>
+      <a href="areas.html">지역별 설치 안내</a>
+    </nav>
+    <a href="tel:010-2928-3614" class="header-cta">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.32.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.27.2 2.48.57 3.58-.11.35-.02.74-.47 1.22z"/></svg>
+      전화 상담
+    </a>
+    <button class="ham" id="ham" aria-label="메뉴">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html#products" class="mnav-link">제품소개</a>
+    <a href="index.html#solutions" class="mnav-link">업종별 솔루션</a>
+    <a href="index.html#pricing" class="mnav-link">요금안내</a>
+    <a href="index.html#faq" class="mnav-link">FAQ</a>
+    <a href="index.html#reviews" class="mnav-link">설치후기</a>
+    <a href="areas.html" class="mnav-link">지역별 설치 안내</a>
+    <a href="tel:010-2928-3614" class="mnav-call">📞 010-2928-3614</a>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="rp-bc-wrap">
+  <div class="wrap rp-bc">
+    <a href="index.html">홈</a>
+    <span>›</span>
+    <a href="index.html#regions">지역 안내</a>
+    <span>›</span>
+    <a id="bcSido" href="index.html#regions"></a>
+    <span>›</span>
+    <strong id="bcCity"></strong>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="rp-hero">
+  <div class="wrap">
+    <!-- 제품 탭 -->
+    <div class="rp-tabs">
+      <button class="rp-tab on" data-prod="pos">💳 포스기·카드단말기</button>
+      <button class="rp-tab" data-prod="table">🍽 테이블오더</button>
+      <button class="rp-tab" data-prod="kiosk">🤖 무인자판기</button>
+    </div>
+    <!-- 본문 -->
+    <div class="rp-hero-inner">
+      <div class="rp-hero-img">
+        <img id="rpImg" src="img-pos.jfif" alt="포스기 설치 사진" />
+      </div>
+      <div class="rp-hero-info">
+        <p class="rp-loc-badge">📍 <span id="rpBadge"></span></p>
+        <h1 id="rpTitle"></h1>
+        <p class="rp-desc" id="rpDesc"></p>
+        <div class="rp-btns">
+          <a href="tel:010-2928-3614" class="rg-btn-call">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.32.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.27.2 2.48.57 3.58-.11.35-.02.74-.47 1.22z"/></svg>
+            전화 상담 010-2928-3614
+          </a>
+          <a href="tel:010-2928-3614" class="rg-btn-consult">무료 상담 신청</a>
+        </div>
+        <div class="rg-live-badge">
+          <span class="rg-live-dot"></span>
+          지금 <strong id="rpLive"></strong>명 실시간 상담 중
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 특징 4가지 -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-hd">
+      <p class="sec-tag">여비POS 특징</p>
+      <h2 id="rpFeatTitle"></h2>
+      <p class="sec-desc">설치비 무료 · 평균 4일 이내 설치 · 24시간 AS · 업계 최저 수수료</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-num">01</div>
+        <h3>빠른 설치</h3>
+        <p>신청 후 평균 4일 이내 설치 완료. <span id="rpCity2"></span> 어디서든 빠르게 방문합니다.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">02</div>
+        <h3>설치비 완전 무료</h3>
+        <p>기기 설치·배선·세팅·교육까지 모두 무료. 숨겨진 비용이 전혀 없습니다.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">03</div>
+        <h3>업계 최저 수수료</h3>
+        <p>불필요한 중간 비용 없이 합리적이고 투명한 수수료 체계를 운영합니다.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">04</div>
+        <h3>24시간 365일 AS</h3>
+        <p>영업 중 문제가 생기면 즉시 대응합니다. 연중무휴 무상 기술 지원 제공.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 요금 안내 -->
+<section class="section bg-gray">
+  <div class="wrap">
+    <div class="sec-hd">
+      <p class="sec-tag">Pricing</p>
+      <h2>투명한 요금 안내</h2>
+      <p class="sec-desc">숨은 비용 없이 — 설치비와 가맹 대행 수수료는 받지 않습니다.</p>
+    </div>
+    <div class="price-table-wrap">
+      <table class="price-table">
+        <thead>
+          <tr><th>구분</th><th>설치비</th><th>월 이용료</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>카드단말기</td><td class="free">무료</td><td class="amount">9,900원~</td></tr>
+          <tr><td>포스(POS)</td><td class="free">무료</td><td class="amount">21,000원~</td></tr>
+          <tr><td>키오스크</td><td class="free">무료</td><td class="amount">33,000원~</td></tr>
+          <tr><td>토스페이결제기</td><td class="free">무료</td><td class="amount">11,000원~</td></tr>
+          <tr><td>테이블오더</td><td class="free">무료</td><td class="amount">14,000원~</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="price-note">※ 월 이용료는 단말기 종류·기능에 따라 달라질 수 있습니다. 정확한 요금은 상담 시 안내드립니다. &nbsp;<a href="tel:010-2928-3614">문의하기 →</a></p>
+  </div>
+</section>
+
+<!-- 취급 단말기 키워드 -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-hd">
+      <p class="sec-tag">취급 단말기</p>
+      <h2 id="rpKwTitle"></h2>
+    </div>
+    <div class="rp-keywords" id="rpKeywords"></div>
+  </div>
+</section>
+
+<!-- 주변 지역 -->
+<section class="section bg-gray">
+  <div class="wrap">
+    <div class="sec-hd">
+      <p class="sec-tag">주변 지역</p>
+      <h2 id="rpNearTitle"></h2>
+      <p class="sec-desc">인근 지역도 동일한 조건으로 설치 가능합니다</p>
+    </div>
+    <div class="rp-nearby" id="rpNearby"></div>
+  </div>
+</section>
+
+<!-- 동·읍·면 목록 -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-hd">
+      <p class="sec-tag">동·읍·면 안내</p>
+      <h2 id="rpDongTitle">동·읍·면 별 설치 안내</h2>
+      <p class="sec-desc">아래 동·읍·면을 클릭하면 해당 지역 상세 안내 페이지로 이동합니다</p>
+    </div>
+    <div class="rp-nearby" id="rpDongList"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="wrap cta-inner">
+    <div>
+      <h2 id="rpCtaTitle"></h2>
+      <p>전문 상담사가 업종에 맞는 최적의 솔루션을 제안해 드립니다</p>
+    </div>
+    <div class="cta-btns">
+      <a href="tel:010-2928-3614" class="cta-phone">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.32.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.27.2 2.48.57 3.58-.11.35-.02.74-.47 1.22z"/></svg>
+        010-2928-3614
+      </a>
+      <a href="http://pf.kakao.com" class="cta-kakao">💬 카카오톡 상담</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="ft-brand">
+      <div class="ft-logo">여비<span>POS</span></div>
+      <p>전국 소상공인을 위한<br>포스기·카드단말기 설치 전문</p>
+      <a href="tel:010-2928-3614" class="ft-tel">010-2928-3614</a>
+      <small>📞 24시간 365일 언제든지 연락주세요</small>
+    </div>
+    <div class="ft-links">
+      <h5>서비스</h5>
+      <a href="index.html#products">제품소개</a>
+      <a href="index.html#solutions">업종별 솔루션</a>
+      <a href="index.html#pricing">요금안내</a>
+      <a href="index.html#reviews">설치후기</a>
+    </div>
+    <div class="ft-links">
+      <h5>고객지원</h5>
+      <a href="index.html#faq">자주묻는질문</a>
+      <a href="tel:010-2928-3614">전화 상담</a>
+      <a href="#">카카오톡 상담</a>
+      <a href="index.html#regions">지역안내</a>
+    </div>
+    <div class="ft-links">
+      <h5>약관</h5>
+      <a href="#">이용약관</a>
+      <a href="#">개인정보처리방침</a>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <div class="wrap">
+      <p>상호명: 여비POS &nbsp;|&nbsp; 대표: 남성엽</p>
+      <p>© 2025 여비POS. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:010-2928-3614" class="float-btn" aria-label="전화 상담">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.32.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.27.2 2.48.57 3.58-.11.35-.02.74-.47 1.22z"/></svg>
+</a>
+
+<script src="dong-data.js"></script>
+<script>
+// ── 헤더 스크롤
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 10), { passive: true });
+
+// ── 모바일 메뉴
+const ham = document.getElementById('ham');
+const mobileNav = document.getElementById('mobileNav');
+ham.addEventListener('click', () => mobileNav.classList.toggle('open'));
+document.addEventListener('click', e => { if (!header.contains(e.target)) mobileNav.classList.remove('open'); });
+
+// ── 시·도 전체명 매핑
+const SIDO_LABELS = {
+  '서울':'서울특별시','인천':'인천광역시','경기':'경기도','부산':'부산광역시',
+  '대구':'대구광역시','대전':'대전광역시','광주':'광주광역시','울산':'울산광역시',
+  '세종':'세종특별자치시','경북':'경상북도','경남':'경상남도','전북':'전라북도',
+  '전남':'전라남도','충북':'충청북도','충남':'충청남도','강원':'강원특별자치도','제주':'제주특별자치도'
+};
+
+// ── 시·도별 지역 목록 (주변 지역 표시용)
+const SIDO_DISTRICTS = {
+  '서울':['강남구','강동구','강북구','강서구','관악구','광진구','구로구','금천구','노원구','도봉구','동대문구','동작구','마포구','서대문구','서초구','성동구','성북구','송파구','양천구','영등포구','용산구','은평구','종로구','중구','중랑구'],
+  '인천':['중구','동구','미추홀구','연수구','남동구','부평구','계양구','서구','강화군','옹진군'],
+  '경기':['수원시 장안구','수원시 권선구','수원시 팔달구','수원시 영통구','성남시 수정구','성남시 중원구','성남시 분당구','의정부시','안양시 만안구','안양시 동안구','부천시','광명시','평택시','동두천시','안산시 상록구','안산시 단원구','고양시 덕양구','고양시 일산동구','고양시 일산서구','과천시','구리시','남양주시','오산시','시흥시','군포시','의왕시','하남시','용인시 처인구','용인시 기흥구','용인시 수지구','파주시','이천시','안성시','김포시','화성시','광주시','양주시','포천시','여주시'],
+  '부산':['중구','서구','동구','영도구','부산진구','동래구','남구','북구','해운대구','사하구','금정구','강서구','연제구','수영구','사상구','기장군'],
+  '대구':['중구','동구','서구','남구','북구','수성구','달서구','달성군'],
+  '대전':['동구','중구','서구','유성구','대덕구'],
+  '광주':['동구','서구','남구','북구','광산구'],
+  '울산':['중구','남구','동구','북구','울주군'],
+  '세종':['세종시'],
+  '경북':['포항시 남구','포항시 북구','경주시','김천시','안동시','구미시','영주시','영천시','상주시','문경시','경산시','군위군','의성군','청송군','영양군','영덕군','청도군','고령군','성주군','칠곡군','예천군','봉화군','울진군','울릉군'],
+  '경남':['창원시 의창구','창원시 성산구','창원시 마산합포구','창원시 마산회원구','창원시 진해구','진주시','통영시','사천시','김해시','밀양시','거제시','양산시','의령군','함안군','창녕군','고성군','남해군','하동군','산청군','함양군','거창군','합천군'],
+  '전북':['전주시 완산구','전주시 덕진구','군산시','익산시','정읍시','남원시','김제시','완주군','진안군','무주군','장수군','임실군','순창군','고창군','부안군'],
+  '전남':['목포시','여수시','순천시','나주시','광양시','담양군','곡성군','구례군','고흥군','보성군','화순군','장흥군','강진군','해남군','영암군','무안군','함평군','영광군','장성군','완도군','진도군','신안군'],
+  '충북':['청주시 상당구','청주시 서원구','청주시 흥덕구','청주시 청원구','충주시','제천시','보은군','옥천군','영동군','증평군','진천군','괴산군','음성군','단양군'],
+  '충남':['천안시 동남구','천안시 서북구','공주시','보령시','아산시','서산시','논산시','계룡시','당진시','금산군','부여군','서천군','청양군','홍성군','예산군','태안군'],
+  '강원':['춘천시','원주시','강릉시','동해시','태백시','속초시','삼척시','홍천군','횡성군','영월군','평창군','정선군','철원군','화천군','양구군','인제군','고성군','양양군'],
+  '제주':['제주시','서귀포시']
+};
+
+// ── 제품 설정
+const PROD_IMG = { pos:'img-pos.jfif', table:'img-table.jfif', kiosk:'img-vending.jfif' };
+const PROD_TEXT = {
+  pos: {
+    title: (c) => c + ' 카드단말기·포스기 설치 전문',
+    desc:  (c) => c + ' 전역에 카드단말기·포스기·키오스크·토스페이결제기·무인자판기를 설치비 무료, 평균 4일 이내 방문 설치해 드립니다.',
+    feat:  (c) => c + ' 포스기·카드단말기 설치 안내',
+    kw:    (c) => [c+' 카드단말기',c+' 포스기',c+' 키오스크',c+' 무인자판기',c+' 무선 단말기',c+' 블루투스 단말기',c+' 토스페이',c+' 토스페이결제',c+' 토스결제기',c+' 토스페이스결제',c+' 이동식단말기',c+' 휴대용단말기',c+' 테이블오더'],
+  },
+  table: {
+    title: (c) => c + ' 테이블오더 설치 전문',
+    desc:  (c) => c + ' 전역에 테이블오더를 설치비 무료, 평균 4일 이내 방문 설치해 드립니다. QR 셀프 주문·결제로 인건비를 절감하고 운영 효율을 높여 드립니다.',
+    feat:  (c) => c + ' 테이블오더 설치 안내',
+    kw:    (c) => [c+' 테이블오더',c+' QR주문',c+' 셀프주문',c+' 테이블결제',c+' 식당 테이블오더',c+' 카페 테이블오더',c+' 무선주문',c+' 주문패드',c+' 테이블POS'],
+  },
+  kiosk: {
+    title: (c) => c + ' 무인자판기 설치 전문',
+    desc:  (c) => c + ' 전역에 무인자판기를 설치비 무료, 평균 4일 이내 방문 설치해 드립니다. 24시간 무인 운영으로 인건비 없이 안정적인 수익을 창출할 수 있습니다.',
+    feat:  (c) => c + ' 무인자판기 설치 안내',
+    kw:    (c) => [c+' 무인자판기',c+' 자판기 설치',c+' 스마트자판기',c+' 무인판매기',c+' 음료자판기',c+' 과자자판기',c+' 무인매장',c+' 키오스크 자판기'],
+  }
+};
+
+// ── URL 파라미터 읽기
+const params  = new URLSearchParams(window.location.search);
+const sido    = params.get('sido') || '서울';
+const city    = decodeURIComponent(params.get('city') || '강남구');
+let   prod    = params.get('prod') || 'pos';
+const siLabel = SIDO_LABELS[sido] || sido;
+
+// ── 콘텐츠 채우기
+function fillContent() {
+  const pt = PROD_TEXT[prod] || PROD_TEXT.pos;
+
+  // 메타
+  document.title = pt.title(city) + ' | 여비POS';
+  document.getElementById('pageDesc').content = pt.desc(city);
+
+  // 브레드크럼
+  document.getElementById('bcSido').textContent = siLabel;
+  document.getElementById('bcSido').href = 'index.html#regions';
+  document.getElementById('bcCity').textContent = city;
+
+  // 히어로
+  document.getElementById('rpBadge').textContent  = siLabel + ' ' + city;
+  document.getElementById('rpTitle').textContent  = pt.title(city);
+  document.getElementById('rpDesc').textContent   = pt.desc(city);
+  document.getElementById('rpLive').textContent   = Math.floor(Math.random() * 16) + 8;
+  document.getElementById('rpImg').src            = PROD_IMG[prod];
+  document.getElementById('rpImg').alt            = pt.title(city) + ' 사진';
+
+  // 특징 섹션
+  document.getElementById('rpFeatTitle').textContent = pt.feat(city);
+  document.getElementById('rpCity2').textContent     = city;
+
+  // 키워드
+  document.getElementById('rpKwTitle').textContent = city + ' 취급 단말기 검색';
+  const kwWrap = document.getElementById('rpKeywords');
+  kwWrap.innerHTML = pt.kw(city).map(k =>
+    `<a href="tel:010-2928-3614" class="rp-kw">${k}</a>`
+  ).join('');
+
+  // 주변 지역
+  document.getElementById('rpNearTitle').textContent = siLabel + ' 다른 지역 안내';
+  const districts = (SIDO_DISTRICTS[sido] || []).filter(d => d !== city);
+  const nearby = districts.slice(0, 16);
+  document.getElementById('rpNearby').innerHTML = nearby.map(d =>
+    `<a class="rp-near-tag" href="region.html?sido=${encodeURIComponent(sido)}&city=${encodeURIComponent(d)}&prod=${prod}">${d}</a>`
+  ).join('');
+
+  // 동·읍·면 목록
+  document.getElementById('rpDongTitle').textContent = city + ' 동·읍·면 설치 안내';
+  const dongs = (typeof DONG_DATA !== 'undefined' && DONG_DATA[sido]) ? (DONG_DATA[sido][city] || []) : [];
+  if (dongs.length) {
+    document.getElementById('rpDongList').innerHTML = dongs.map(d =>
+      `<a class="rp-near-tag" href="dong.html?sido=${encodeURIComponent(sido)}&city=${encodeURIComponent(city)}&dong=${encodeURIComponent(d)}&prod=${prod}">${d}</a>`
+    ).join('');
+  } else {
+    document.getElementById('rpDongList').innerHTML = `<p style="color:#6b7280">현재 ${city}의 동·읍·면 데이터를 준비 중입니다.</p>`;
+  }
+
+  // CTA
+  document.getElementById('rpCtaTitle').textContent = city + ' 설치 무료 상담 받아보세요';
+}
+
+// ── 제품 탭 전환
+document.querySelectorAll('.rp-tab').forEach(btn => {
+  if (btn.dataset.prod === prod) btn.classList.add('on');
+  else btn.classList.remove('on');
+
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.rp-tab').forEach(b => b.classList.remove('on'));
+    btn.classList.add('on');
+    prod = btn.dataset.prod;
+    // URL 업데이트 (히스토리 스택 없이)
+    const url = new URL(window.location.href);
+    url.searchParams.set('prod', prod);
+    history.replaceState(null, '', url);
+    fillContent();
+  });
+});
+
+fillContent();
+</script>
+</body>
+</html>
