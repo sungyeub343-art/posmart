@@ -99,35 +99,94 @@
   </div>
 </section>
 
-<!-- 특징 4가지 -->
-<section class="section">
+<!-- 특징 -->
+<section class="section rp-why-section">
   <div class="wrap">
     <div class="sec-hd">
       <p class="sec-tag">여비POS 특징</p>
       <h2 id="rpFeatTitle"></h2>
-      <p class="sec-desc">설치비 무료 · 평균 4일 이내 설치 · 24시간 AS · 업계 최저 수수료</p>
+      <p class="sec-desc">전국 소상공인이 여비POS를 선택하는 이유</p>
     </div>
-    <div class="why-grid">
-      <div class="why-card">
-        <div class="why-num">01</div>
-        <h3>빠른 설치</h3>
-        <p>신청 후 평균 4일 이내 설치 완료. <span id="rpCity2"></span> 어디서든 빠르게 방문합니다.</p>
+
+    <!-- 상단 숫자 통계 -->
+    <div class="rp-stats-row">
+      <div class="rp-stat">
+        <strong>4일</strong>
+        <span>평균 설치 소요일</span>
       </div>
-      <div class="why-card">
-        <div class="why-num">02</div>
-        <h3>설치비 완전 무료</h3>
-        <p>기기 설치·배선·세팅·교육까지 모두 무료. 숨겨진 비용이 전혀 없습니다.</p>
+      <div class="rp-stat">
+        <strong>0원</strong>
+        <span>설치비</span>
       </div>
-      <div class="why-card">
-        <div class="why-num">03</div>
-        <h3>업계 최저 수수료</h3>
-        <p>불필요한 중간 비용 없이 합리적이고 투명한 수수료 체계를 운영합니다.</p>
+      <div class="rp-stat">
+        <strong>24시간</strong>
+        <span>연중무휴 A/S</span>
       </div>
-      <div class="why-card">
-        <div class="why-num">04</div>
-        <h3>24시간 365일 AS</h3>
-        <p>영업 중 문제가 생기면 즉시 대응합니다. 연중무휴 무상 기술 지원 제공.</p>
+      <div class="rp-stat">
+        <strong>5종</strong>
+        <span>취급 제품</span>
       </div>
+    </div>
+
+    <!-- 특징 카드 4개 -->
+    <div class="rp-why-grid">
+      <div class="rp-why-card">
+        <div class="rp-why-icon">🚀</div>
+        <div class="rp-why-body">
+          <h3>빠른 설치</h3>
+          <p>신청 후 평균 <strong>4일 이내</strong> 설치 완료.<br><span id="rpCity2"></span> 전 지역 직접 방문 설치합니다.</p>
+          <ul class="rp-why-checks">
+            <li>당일 상담 후 일정 확정</li>
+            <li>기사 직접 방문 설치</li>
+            <li>설치 후 현장 사용법 교육</li>
+          </ul>
+        </div>
+      </div>
+      <div class="rp-why-card">
+        <div class="rp-why-icon">💰</div>
+        <div class="rp-why-body">
+          <h3>설치비 완전 무료</h3>
+          <p>기기 설치·배선·세팅·교육까지<br><strong>모든 비용이 0원</strong>입니다.</p>
+          <ul class="rp-why-checks">
+            <li>출장비 없음</li>
+            <li>초기 가입비 없음</li>
+            <li>숨겨진 추가 비용 없음</li>
+          </ul>
+        </div>
+      </div>
+      <div class="rp-why-card">
+        <div class="rp-why-icon">💳</div>
+        <div class="rp-why-body">
+          <h3>업계 최저 수수료</h3>
+          <p>불필요한 중간 단계 없이<br><strong>투명하고 합리적인 요금</strong>제를 운영합니다.</p>
+          <ul class="rp-why-checks">
+            <li>월 9,900원~부터 시작</li>
+            <li>계약 기간 부담 없음</li>
+            <li>요금 변동 사전 고지</li>
+          </ul>
+        </div>
+      </div>
+      <div class="rp-why-card">
+        <div class="rp-why-icon">🔧</div>
+        <div class="rp-why-body">
+          <h3>24시간 365일 A/S</h3>
+          <p>영업 중 문제가 생겨도<br><strong>즉시 출동</strong>해 드립니다.</p>
+          <ul class="rp-why-checks">
+            <li>전담 기사 1:1 배정</li>
+            <li>원격 지원 즉시 가능</li>
+            <li>무상 수리·부품 교체</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 하단 CTA 배너 -->
+    <div class="rp-why-banner">
+      <div>
+        <strong id="rpWhyBannerTitle"></strong>
+        <span>지금 바로 무료 상담 신청하세요</span>
+      </div>
+      <a href="tel:010-2928-3614" class="rp-why-btn">📞 010-2928-3614 무료 상담</a>
     </div>
   </div>
 </section>
@@ -371,6 +430,9 @@ function fillContent() {
   } else {
     document.getElementById('rpDongList').innerHTML = `<p style="color:#6b7280">현재 ${city}의 동·읍·면 데이터를 준비 중입니다.</p>`;
   }
+
+  // why 배너
+  document.getElementById('rpWhyBannerTitle').textContent = city + ' 설치 문의,';
 
   // CTA
   document.getElementById('rpCtaTitle').textContent = city + ' 설치 무료 상담 받아보세요';

@@ -90,14 +90,153 @@
 }
 .rp-near-tag:hover { background: var(--blue); color: #fff; border-color: var(--blue); }
 
+/* ── 특징 섹션 ── */
+.rp-why-section { background: #fff; }
+
+/* 통계 행 */
+.rp-stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 48px;
+}
+.rp-stat {
+  background: var(--bg-gray);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  text-align: center;
+}
+.rp-stat strong {
+  display: block;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--blue);
+  margin-bottom: 4px;
+}
+.rp-stat span {
+  font-size: .82rem;
+  color: var(--gray);
+}
+
+/* 카드 그리드 */
+.rp-why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.rp-why-card {
+  background: #fff;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+.rp-why-card:hover {
+  border-color: var(--blue);
+  box-shadow: 0 8px 24px rgba(22,163,74,.12);
+  transform: translateY(-4px);
+}
+.rp-why-icon {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+  width: 56px; height: 56px;
+  background: var(--blue-bg);
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+}
+.rp-why-body h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.rp-why-body p {
+  font-size: .875rem;
+  color: var(--gray);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+.rp-why-body p strong { color: var(--blue); font-weight: 700; }
+.rp-why-checks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.rp-why-checks li {
+  font-size: .82rem;
+  color: #444;
+  padding-left: 18px;
+  position: relative;
+}
+.rp-why-checks li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+/* 하단 배너 */
+.rp-why-banner {
+  background: linear-gradient(135deg, #14532d 0%, #16a34a 100%);
+  border-radius: var(--radius);
+  padding: 28px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.rp-why-banner div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.rp-why-banner strong {
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: #fff;
+}
+.rp-why-banner span {
+  font-size: .9rem;
+  color: rgba(255,255,255,.75);
+}
+.rp-why-btn {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  color: var(--blue);
+  font-size: .95rem;
+  font-weight: 800;
+  padding: 14px 28px;
+  border-radius: 100px;
+  white-space: nowrap;
+  transition: all .2s;
+}
+.rp-why-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
 /* ── 반응형 */
 @media (max-width: 768px) {
   .rp-hero-inner { grid-template-columns: 1fr; }
   .rp-hero-img { min-height: 220px; }
   .rp-hero-info { padding: 24px 20px; }
+  .rp-stats-row { grid-template-columns: repeat(2, 1fr); }
+  .rp-why-grid { grid-template-columns: repeat(2, 1fr); }
+  .rp-why-banner { flex-direction: column; text-align: center; }
+  .rp-why-btn { width: 100%; justify-content: center; }
 }
 @media (max-width: 560px) {
   .rp-btns { flex-direction: column; }
   .rg-btn-call, .rg-btn-consult { justify-content: center; }
   .rp-tabs { justify-content: center; }
+  .rp-why-grid { grid-template-columns: 1fr; }
+  .rp-stats-row { grid-template-columns: repeat(2, 1fr); }
 }
