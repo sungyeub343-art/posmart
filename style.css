@@ -705,6 +705,217 @@ img { max-width: 100%; display: block; }
 }
 
 /* ============================
+   PRODUCT DETAIL SECTION
+   ============================ */
+.pd-block {
+  margin-bottom: 56px;
+}
+.pd-block:last-child { margin-bottom: 0; }
+
+.pd-block-hd {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--blue);
+}
+.pd-block-icon { font-size: 1.6rem; }
+.pd-block-hd h3 {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--text);
+}
+.pd-block-hd p {
+  font-size: .875rem;
+  color: var(--gray);
+  margin-left: auto;
+}
+
+.pd-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.pd-card {
+  background: #fff;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius);
+  padding: 26px 22px;
+  transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+.pd-card:hover {
+  border-color: var(--blue);
+  box-shadow: 0 6px 20px rgba(22,163,74,.1);
+  transform: translateY(-3px);
+}
+.pd-model {
+  display: inline-block;
+  font-size: .75rem;
+  font-weight: 700;
+  color: var(--blue);
+  background: var(--blue-bg);
+  border: 1px solid #bbf7d0;
+  border-radius: 100px;
+  padding: 3px 12px;
+  margin-bottom: 10px;
+}
+.pd-card h4 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 14px;
+}
+.pd-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.pd-list li {
+  font-size: .85rem;
+  color: var(--gray);
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.5;
+}
+.pd-list li::before {
+  content: '·';
+  position: absolute;
+  left: 4px;
+  color: var(--blue);
+  font-weight: 900;
+}
+
+.pd-card-info {
+  background: var(--blue-bg);
+  border-color: #bbf7d0;
+}
+.pd-info-title {
+  font-size: .9rem;
+  font-weight: 800;
+  color: var(--blue);
+  margin-bottom: 14px;
+}
+.pd-check-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.pd-check-list li {
+  font-size: .875rem;
+  color: #1a4731;
+  padding-left: 20px;
+  position: relative;
+}
+.pd-check-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+/* 포스기 세트 */
+.pd-pos-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: center;
+}
+.pd-pos-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.pd-pos-item {
+  background: #fff;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 16px;
+  text-align: center;
+  transition: all .2s;
+}
+.pd-pos-item:hover { border-color: var(--blue); transform: translateY(-2px); }
+.pd-pos-item span { font-size: 1.8rem; display: block; margin-bottom: 8px; }
+.pd-pos-item p { font-size: .82rem; font-weight: 700; color: var(--text); }
+
+.pd-pos-cta {
+  background: linear-gradient(135deg, #14532d 0%, #16a34a 100%);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.pd-pos-cta strong { font-size: 1.15rem; font-weight: 900; color: #fff; margin-bottom: 12px; display: block; }
+.pd-pos-cta p { font-size: .875rem; color: rgba(255,255,255,.8); line-height: 1.7; }
+
+/* 키오스크 */
+.pd-kiosk-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 24px;
+}
+.pd-kiosk-types { display: flex; flex-direction: column; gap: 16px; }
+.pd-kiosk-adv {
+  background: #fff;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+}
+.pd-kiosk-adv h4 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.pd-adv-grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.pd-adv2 {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.pd-adv2 span { font-size: 1.2rem; flex-shrink: 0; }
+.pd-adv2 p { font-size: .85rem; color: var(--gray); line-height: 1.5; }
+.pd-kiosk-sets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.pd-set-tag {
+  font-size: .82rem;
+  font-weight: 700;
+  color: var(--blue);
+  background: var(--blue-bg);
+  border: 1px solid #bbf7d0;
+  border-radius: 100px;
+  padding: 6px 14px;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .pd-grid { grid-template-columns: 1fr; }
+  .pd-pos-wrap { grid-template-columns: 1fr; }
+  .pd-kiosk-wrap { grid-template-columns: 1fr; }
+  .pd-block-hd p { display: none; }
+}
+@media (max-width: 560px) {
+  .pd-pos-items { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .pd-adv-grid2 { grid-template-columns: 1fr; }
+}
+
+/* ============================
    VENDING INFO SECTION
    ============================ */
 .vd-adv-grid {
