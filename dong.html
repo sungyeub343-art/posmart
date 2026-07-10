@@ -830,9 +830,6 @@ function fillContent(p) {
     document.getElementById('tableBodyLead').textContent =
       sL + ' ' + city + ' ' + dong + '에서 테이블오더, 태블릿오더, QR오더, 전자메뉴판을 업종과 매장 규모에 맞춰 설치해 드립니다. ' +
       '포스연동·카드결제연동부터 주방프린터연동, KDS까지 원스톱으로 구축해 드립니다.';
-    document.getElementById('tableBodyTags').innerHTML = TABLE_BODY_KEYWORDS.map(k =>
-      `<a href="tel:010-2928-3614" class="rp-kiosk-tag">${dong} ${k}</a>`
-    ).join('');
   } else {
     tableSection.hidden = true;
   }
