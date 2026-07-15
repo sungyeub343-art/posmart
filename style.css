@@ -1039,6 +1039,143 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
 }
 
+/* ============================
+   VG — 자판기·테이블오더 본문
+   ============================ */
+
+/* 소개 박스 */
+.vg-intro-box {
+  background: var(--blue-bg);
+  border-left: 4px solid var(--blue);
+  border-radius: var(--radius-s);
+  padding: 24px 28px;
+  margin-bottom: 48px;
+  line-height: 1.85;
+  color: var(--text);
+  font-size: .95rem;
+}
+
+/* 블록 공통 */
+.vg-block { margin-bottom: 56px; }
+.vg-block:last-child { margin-bottom: 0; }
+.vg-block-title {
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: var(--text);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--blue);
+}
+
+/* 자판기 종류 그리드 */
+.vg-type-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.vg-type-card {
+  background: #fff;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-s);
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: box-shadow .2s, border-color .2s;
+}
+.vg-type-card:hover {
+  border-color: var(--blue);
+  box-shadow: var(--shadow);
+}
+.vg-type-card span { font-size: 1.5rem; }
+.vg-type-card strong { font-size: .88rem; font-weight: 800; color: var(--text); }
+.vg-type-card p { font-size: .78rem; color: var(--gray); line-height: 1.55; margin: 0; }
+
+/* 설치 장소 */
+.vg-location-wrap { display: flex; flex-direction: column; gap: 18px; }
+.vg-loc-group { display: flex; align-items: flex-start; gap: 16px; }
+.vg-loc-group > strong {
+  min-width: 76px;
+  font-size: .82rem;
+  font-weight: 800;
+  color: var(--blue);
+  background: var(--blue-bg);
+  border-radius: 100px;
+  padding: 4px 12px;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 2px;
+}
+.vg-loc-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.vg-loc-tags span {
+  font-size: .8rem;
+  color: var(--text);
+  background: var(--bg-gray);
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  padding: 4px 12px;
+}
+
+/* 창업 정보 그리드 */
+.vg-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.vg-info-card {
+  background: #fff;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px 22px;
+}
+.vg-info-icon { font-size: 1.8rem; margin-bottom: 10px; }
+.vg-info-card h4 {
+  font-size: .95rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.vg-info-card p { font-size: .83rem; color: var(--gray); line-height: 1.75; margin: 0; }
+
+/* 스마트 기능 */
+.vg-feat-wrap { display: flex; flex-direction: column; gap: 0; }
+.vg-feat-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+.vg-feat-item:last-child { border-bottom: none; }
+.vg-feat-item > span { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+.vg-feat-item > div { display: flex; flex-direction: column; gap: 4px; }
+.vg-feat-item strong { font-size: .92rem; font-weight: 800; color: var(--text); }
+.vg-feat-item p { font-size: .82rem; color: var(--gray); line-height: 1.6; margin: 0; }
+
+/* 키워드 태그 */
+.rp-kiosk-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.rp-kiosk-tag {
+  font-size: .78rem;
+  color: var(--blue);
+  background: var(--blue-bg);
+  border: 1px solid #bbf7d0;
+  border-radius: 100px;
+  padding: 5px 13px;
+  white-space: nowrap;
+  transition: background .15s;
+}
+.rp-kiosk-tag:hover { background: #dcfce7; }
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .vg-type-grid { grid-template-columns: repeat(2, 1fr); }
+  .vg-info-grid { grid-template-columns: 1fr; }
+  .vg-loc-group { flex-direction: column; gap: 8px; }
+}
+@media (max-width: 480px) {
+  .vg-type-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 /* 자판기 통합 이미지 */
 .vg-unified-img {
   text-align: center;
