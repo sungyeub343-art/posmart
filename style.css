@@ -1052,6 +1052,22 @@ img { max-width: 100%; display: block; }
   box-shadow: var(--shadow-md);
 }
 
+/* K정보통신 제품안내 이미지 - 노란 테두리를 초록으로 교체 */
+.vg-k-wrap {
+  max-width: 480px;
+  margin: 32px auto 48px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 6px solid var(--blue);
+  box-shadow: var(--shadow-md);
+}
+.vg-k-wrap img {
+  width: 100%;
+  display: block;
+  transform: scale(1.07);
+  transform-origin: center top;
+}
+
 /* ============================
    RESPONSIVE
    ============================ */
