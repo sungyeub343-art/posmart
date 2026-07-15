@@ -714,153 +714,6 @@ img { max-width: 100%; display: block; }
 }
 
 /* ============================
-   VENDING GUIDE SECTION
-   ============================ */
-.vg-intro-box {
-  background: #fff;
-  border: 1.5px solid var(--line);
-  border-left: 4px solid var(--blue);
-  border-radius: var(--radius);
-  padding: 24px 28px;
-  margin-bottom: 48px;
-  font-size: .95rem;
-  color: var(--gray);
-  line-height: 1.9;
-}
-.vg-intro-box strong { color: var(--text); }
-
-.vg-block { margin-bottom: 52px; }
-.vg-block-title {
-  font-size: 1.15rem;
-  font-weight: 800;
-  color: var(--text);
-  margin-bottom: 20px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid var(--blue);
-}
-
-/* 종류 그리드 */
-.vg-type-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 16px;
-}
-.vg-type-card {
-  background: #fff;
-  border: 1.5px solid var(--line);
-  border-radius: var(--radius);
-  padding: 20px 16px;
-  text-align: center;
-  transition: all .2s;
-}
-.vg-type-card:hover { border-color: var(--blue); transform: translateY(-3px); box-shadow: 0 6px 18px rgba(22,163,74,.1); }
-.vg-type-card span { font-size: 1.8rem; display: block; margin-bottom: 8px; }
-.vg-type-card strong { font-size: .85rem; font-weight: 800; color: var(--text); display: block; margin-bottom: 6px; }
-.vg-type-card p { font-size: .78rem; color: var(--gray); line-height: 1.5; }
-
-/* 설치 장소 */
-.vg-location-wrap {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-.vg-loc-group {
-  background: #fff;
-  border: 1.5px solid var(--line);
-  border-radius: var(--radius);
-  padding: 20px;
-}
-.vg-loc-group > strong {
-  display: block;
-  font-size: .88rem;
-  font-weight: 800;
-  color: var(--blue);
-  margin-bottom: 12px;
-}
-.vg-loc-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-.vg-loc-tags span {
-  font-size: .78rem;
-  color: #444;
-  background: var(--bg-gray);
-  border: 1px solid var(--line);
-  border-radius: 100px;
-  padding: 4px 10px;
-}
-
-/* 창업 정보 */
-.vg-info-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-.vg-info-card {
-  background: #fff;
-  border: 1.5px solid var(--line);
-  border-radius: var(--radius);
-  padding: 26px 24px;
-  transition: all .2s;
-}
-.vg-info-card:hover { border-color: var(--blue); box-shadow: 0 6px 18px rgba(22,163,74,.1); }
-.vg-info-icon { font-size: 1.8rem; margin-bottom: 12px; }
-.vg-info-card h4 { font-size: 1rem; font-weight: 800; color: var(--text); margin-bottom: 10px; }
-.vg-info-card p { font-size: .875rem; color: var(--gray); line-height: 1.8; }
-.vg-info-card p strong { color: var(--text); font-weight: 700; }
-
-/* 스마트 기능 */
-.vg-feat-wrap {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-}
-.vg-feat-item {
-  background: #fff;
-  border: 1.5px solid var(--line);
-  border-radius: var(--radius);
-  padding: 20px 18px;
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-  transition: all .2s;
-}
-.vg-feat-item:hover { border-color: var(--blue); }
-.vg-feat-item > span { font-size: 1.4rem; flex-shrink: 0; }
-.vg-feat-item strong { font-size: .85rem; font-weight: 800; color: var(--text); display: block; margin-bottom: 4px; }
-.vg-feat-item p { font-size: .78rem; color: var(--gray); line-height: 1.5; }
-
-/* CTA */
-.vg-cta-wrap {
-  background: linear-gradient(135deg, #14532d 0%, #16a34a 100%);
-  border-radius: var(--radius);
-  padding: 32px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-.vg-cta-text strong { font-size: 1.2rem; font-weight: 900; color: #fff; display: block; margin-bottom: 6px; }
-.vg-cta-text p { font-size: .9rem; color: rgba(255,255,255,.8); }
-
-/* 반응형 */
-@media (max-width: 1024px) {
-  .vg-type-grid { grid-template-columns: repeat(4, 1fr); }
-  .vg-feat-wrap { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 768px) {
-  .vg-type-grid { grid-template-columns: repeat(2, 1fr); }
-  .vg-location-wrap { grid-template-columns: repeat(2, 1fr); }
-  .vg-info-grid { grid-template-columns: 1fr; }
-  .vg-feat-wrap { grid-template-columns: repeat(2, 1fr); }
-  .vg-cta-wrap { flex-direction: column; text-align: center; }
-  .vg-cta-wrap .vd-cta-btn { width: 100%; justify-content: center; }
-}
-@media (max-width: 560px) {
-  .vg-type-grid { grid-template-columns: repeat(2, 1fr); }
-  .vg-location-wrap { grid-template-columns: 1fr; }
-  .vg-feat-wrap { grid-template-columns: 1fr; }
-}
-
-/* ============================
    PRODUCT DETAIL SECTION
    ============================ */
 .pd-block {
@@ -1184,6 +1037,18 @@ img { max-width: 100%; display: block; }
   left: 0;
   color: var(--blue);
   font-weight: 700;
+}
+
+/* 자판기 통합 이미지 */
+.vg-unified-img {
+  text-align: center;
+  margin: 32px 0 48px;
+}
+.vg-unified-img img {
+  max-width: 480px;
+  width: 100%;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
 }
 
 /* ============================
