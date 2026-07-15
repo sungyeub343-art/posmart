@@ -1047,6 +1047,7 @@ img { max-width: 100%; display: block; }
 .vg-unified-img img {
   max-width: 480px;
   width: 100%;
+  margin: 0 auto;
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
 }
