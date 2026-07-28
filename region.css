@@ -223,6 +223,52 @@
   box-shadow: 0 8px 20px rgba(0,0,0,.15);
 }
 
+/* ── 무인자판기/키오스크 본문 ── */
+.rp-kiosk-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.rp-kiosk-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 20px;
+}
+.rp-kiosk-card h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.rp-kiosk-card p {
+  font-size: .9rem;
+  line-height: 1.78;
+  color: #4b5563;
+}
+.rp-kiosk-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.rp-kiosk-tag {
+  font-size: .8rem;
+  line-height: 1;
+  color: #374151;
+  text-decoration: none;
+  border: 1px solid var(--line);
+  background: #f8fafc;
+  border-radius: 999px;
+  padding: 7px 12px;
+  transition: all .2s ease;
+}
+.rp-kiosk-tag:hover {
+  color: var(--blue);
+  border-color: #bbf7d0;
+  background: var(--blue-bg);
+}
+
 /* ── 반응형 */
 @media (max-width: 768px) {
   .rp-hero-inner { grid-template-columns: 1fr; }
@@ -230,6 +276,7 @@
   .rp-hero-info { padding: 24px 20px; }
   .rp-stats-row { grid-template-columns: repeat(2, 1fr); }
   .rp-why-grid { grid-template-columns: repeat(2, 1fr); }
+  .rp-kiosk-grid { grid-template-columns: 1fr; }
   .rp-why-banner { flex-direction: column; text-align: center; }
   .rp-why-btn { width: 100%; justify-content: center; }
 }
