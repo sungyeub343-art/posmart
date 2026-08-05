@@ -838,6 +838,19 @@ function fillContent() {
   // 메타
   document.title = pt.title(city) + ' | 여비POS';
   document.getElementById('pageDesc').content = pt.desc(city);
+  // 동적 canonical
+  let canonEl = document.querySelector('link[rel="canonical"]');
+  if (!canonEl) { canonEl = document.createElement('link'); canonEl.rel = 'canonical'; document.head.appendChild(canonEl); }
+  canonEl.href = 'https://posmart.kr/region.html?sido=' + encodeURIComponent(sido) + '&city=' + encodeURIComponent(city) + '&prod=' + prod;
+  // 동적 OG
+  const ogT = document.querySelector('meta[property="og:title"]');   if (ogT) ogT.content = document.title;
+  const ogD = document.querySelector('meta[property="og:description"]'); if (ogD) ogD.content = pt.desc(city);
+  // 동적 LocalBusiness JSON-LD
+  const prevLd = document.getElementById('ld-region');
+  if (prevLd) prevLd.remove();
+  const ldEl = document.createElement('script'); ldEl.id = 'ld-region'; ldEl.type = 'application/ld+json';
+  ldEl.textContent = JSON.stringify({"@context":"https://schema.org","@type":"LocalBusiness","name":"여비POS","telephone":"010-2928-3614","url":canonEl.href,"areaServed":{"@type":"Place","name":city},"priceRange":"월 9,900원~","description":pt.desc(city)});
+  document.head.appendChild(ldEl);
 
   // 브레드크럼
   document.getElementById('bcSido').textContent = siLabel;

@@ -798,6 +798,13 @@ function fillContent(p) {
   // <title> & <meta>
   document.getElementById('pageTitle').textContent = tx.title(sido, city, dong);
   document.getElementById('pageMeta').content = tx.desc(sido, city, dong);
+  // 동적 canonical
+  let canonEl = document.querySelector('link[rel="canonical"]');
+  if (!canonEl) { canonEl = document.createElement('link'); canonEl.rel = 'canonical'; document.head.appendChild(canonEl); }
+  canonEl.href = 'https://posmart.kr/dong.html?sido=' + encodeURIComponent(sido) + '&city=' + encodeURIComponent(city) + '&dong=' + encodeURIComponent(dong) + '&prod=' + p;
+  // 동적 OG
+  const ogTd = document.querySelector('meta[property="og:title"]');   if (ogTd) ogTd.content = tx.title(sido, city, dong);
+  const ogDd = document.querySelector('meta[property="og:description"]'); if (ogDd) ogDd.content = tx.desc(sido, city, dong);
 
   // breadcrumb
   document.getElementById('bcSido').textContent = sL;
