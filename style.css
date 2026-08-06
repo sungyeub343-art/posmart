@@ -1040,35 +1040,32 @@ img { max-width: 100%; display: block; }
 }
 
 /* ============================
-   SEO 서비스 소개 섹션
+   SEO KEYWORD BLOCKS
    ============================ */
-.seo-grid {
+.seo-kw-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+  margin-top: 48px;
 }
-.seo-block {
-  background: #fff;
-  border: 1.5px solid var(--line);
+.seo-kw-block {
+  background: var(--surface);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 28px 26px;
+  padding: 28px 24px;
 }
-.seo-block h3 {
-  font-size: 1rem;
-  font-weight: 900;
-  color: var(--text);
+.seo-kw-block h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--blue);
   margin-bottom: 12px;
   padding-bottom: 10px;
   border-bottom: 2px solid var(--blue);
 }
-.seo-block p {
-  font-size: .875rem;
-  color: var(--gray);
-  line-height: 1.85;
-}
-.seo-block strong { color: var(--text); }
-@media (max-width: 768px) {
-  .seo-grid { grid-template-columns: 1fr; }
+.seo-kw-block p {
+  font-size: .88rem;
+  line-height: 1.8;
+  color: var(--text-sub);
 }
 
 /* ============================
@@ -1077,6 +1074,7 @@ img { max-width: 100%; display: block; }
 @media (max-width: 1024px) {
   .product-grid { grid-template-columns: repeat(3, 1fr); }
   .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .seo-kw-grid { grid-template-columns: repeat(2, 1fr); }
   .price-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-wrap { grid-template-columns: 1fr; gap: 40px; }
   .hero-right { max-width: 460px; }
@@ -1110,6 +1108,7 @@ img { max-width: 100%; display: block; }
   .btn-main, .btn-sub { text-align: center; justify-content: center; }
   .product-grid { grid-template-columns: 1fr 1fr; }
   .why-grid { grid-template-columns: 1fr; }
+  .seo-kw-grid { grid-template-columns: 1fr; }
   .price-grid { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; }
   .region-grid { grid-template-columns: 1fr; }
