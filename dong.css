@@ -1,2 +1,273 @@
-/* dong.html — minimal additions on top of region.css */
-/* Most styles are inherited from region.css */
+/* dong.html — 무인자판기·테이블오더·포스기 본문 콘텐츠 스타일 */
+
+/* ── 공통 블록 ── */
+.vg-block {
+  margin-bottom: 52px;
+}
+.vg-block-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 20px;
+  padding: 12px 18px;
+  background: var(--bg-gray);
+  border-left: 4px solid var(--blue);
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+}
+
+/* ── 인트로 박스 ── */
+.vg-intro-box {
+  background: var(--blue-bg);
+  border: 1px solid #bbf7d0;
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  margin-bottom: 40px;
+  font-size: .92rem;
+  line-height: 1.9;
+  color: #374151;
+}
+.vg-intro-box strong { color: var(--blue); font-weight: 700; }
+
+/* ── 안내 이미지 ── */
+.vg-unified-img,
+.vg-k-wrap {
+  margin-bottom: 40px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--bg-gray);
+}
+.vg-unified-img img,
+.vg-k-wrap img {
+  width: 100%;
+  display: block;
+}
+
+/* ══════════════════════════════
+   자판기 종류 그리드
+══════════════════════════════ */
+.vg-type-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.vg-type-card {
+  background: #fff;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+.vg-type-card:hover {
+  border-color: var(--blue);
+  box-shadow: 0 6px 18px rgba(22,163,74,.12);
+  transform: translateY(-3px);
+}
+.vg-type-card > span {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+.vg-type-card > strong {
+  font-size: .9rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.3;
+}
+.vg-type-card > p {
+  font-size: .78rem;
+  color: var(--gray);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ══════════════════════════════
+   설치 가능 장소
+══════════════════════════════ */
+.vg-location-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.vg-loc-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.vg-loc-group > strong {
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--blue);
+  background: var(--blue-bg);
+  border: 1px solid #bbf7d0;
+  border-radius: var(--radius-s);
+  padding: 5px 10px;
+  white-space: nowrap;
+  min-width: 68px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.vg-loc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.vg-loc-tags span {
+  font-size: .78rem;
+  padding: 5px 12px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: #374151;
+  cursor: default;
+  transition: all .18s;
+}
+.vg-loc-tags span:hover {
+  background: var(--blue-bg);
+  border-color: #bbf7d0;
+  color: var(--blue);
+}
+
+/* ══════════════════════════════
+   창업 핵심 정보 그리드
+══════════════════════════════ */
+.vg-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.vg-info-card {
+  background: #fff;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px 22px;
+  transition: border-color .2s, box-shadow .2s;
+}
+.vg-info-card:hover {
+  border-color: var(--blue);
+  box-shadow: 0 6px 20px rgba(22,163,74,.1);
+}
+.vg-info-icon {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  width: 46px;
+  height: 46px;
+  background: var(--blue-bg);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vg-info-card h4 {
+  font-size: .92rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+.vg-info-card p {
+  font-size: .82rem;
+  line-height: 1.82;
+  color: #4b5563;
+  margin: 0;
+}
+.vg-info-card p strong {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+/* ══════════════════════════════
+   스마트 기능 그리드
+══════════════════════════════ */
+.vg-feat-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.vg-feat-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px 16px;
+  transition: border-color .2s, box-shadow .2s;
+}
+.vg-feat-item:hover {
+  border-color: var(--blue);
+  box-shadow: 0 4px 14px rgba(22,163,74,.1);
+}
+.vg-feat-item > span {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 2px;
+}
+.vg-feat-item div strong {
+  display: block;
+  font-size: .86rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 5px;
+}
+.vg-feat-item div p {
+  font-size: .77rem;
+  color: var(--gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ══════════════════════════════
+   히어로 이미지 영역
+══════════════════════════════ */
+.rp-hero-img-wrap {
+  position: relative;
+  min-height: 280px;
+  background: #e5e7eb;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rp-hero-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.rp-live-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: var(--blue);
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 999px;
+  letter-spacing: .02em;
+}
+
+/* ══════════════════════════════
+   반응형
+══════════════════════════════ */
+@media (max-width: 1024px) {
+  .vg-type-grid  { grid-template-columns: repeat(3, 1fr); }
+  .vg-feat-wrap  { grid-template-columns: repeat(3, 1fr); }
+  .vg-info-grid  { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .vg-type-grid  { grid-template-columns: repeat(2, 1fr); }
+  .vg-feat-wrap  { grid-template-columns: repeat(2, 1fr); }
+  .vg-info-grid  { grid-template-columns: 1fr; }
+  .vg-loc-group  { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .vg-loc-group > strong { min-width: unset; }
+  .vg-intro-box  { padding: 18px 20px; }
+}
+@media (max-width: 480px) {
+  .vg-type-grid  { grid-template-columns: 1fr 1fr; }
+  .vg-feat-wrap  { grid-template-columns: 1fr; }
+}
