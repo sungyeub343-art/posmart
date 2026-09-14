@@ -1,0 +1,195 @@
+/* toss.css — 토스단말기 지역 페이지 전용 스타일 */
+
+/* Hero */
+.ts-hero {
+  background: linear-gradient(135deg, #0f2d4a 0%, #1565c0 100%);
+  padding: 80px 0 60px;
+  color: #fff;
+  text-align: center;
+  margin-top: 64px;
+}
+.ts-region-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,.15);
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 100px;
+  padding: 7px 18px;
+  font-size: .85rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.ts-hero h1 {
+  font-size: clamp(1.65rem, 4vw, 2.6rem);
+  font-weight: 900;
+  margin: 0 0 16px;
+  line-height: 1.3;
+}
+.ts-hero-desc {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0 auto 32px;
+  opacity: .88;
+  max-width: 600px;
+}
+.ts-btns {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.ts-btn-call {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  color: #1565c0;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: transform .2s, box-shadow .2s;
+}
+.ts-btn-call:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.15); }
+.ts-btn-consult {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255,255,255,.6);
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background .2s, border-color .2s;
+}
+.ts-btn-consult:hover { background: rgba(255,255,255,.15); border-color: #fff; }
+
+/* Features */
+.ts-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+.ts-feature-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 28px 22px;
+  text-align: center;
+  border: 1px solid var(--line);
+  transition: box-shadow .2s, transform .2s;
+}
+.ts-feature-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,.08); transform: translateY(-2px); }
+.ts-feat-icon { font-size: 2.2rem; margin-bottom: 12px; display: block; }
+.ts-feature-card h3 { font-size: 1rem; font-weight: 700; margin: 0 0 8px; }
+.ts-feature-card p { font-size: .87rem; color: var(--gray); line-height: 1.65; margin: 0; }
+.ts-feature-card p strong { color: var(--text); }
+
+/* Info grid */
+.ts-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin-top: 40px;
+}
+.ts-info-box {
+  background: var(--bg-gray);
+  border-radius: 14px;
+  padding: 26px;
+  border: 1px solid var(--line);
+}
+.ts-info-box h3 { font-size: .98rem; font-weight: 700; margin: 0 0 10px; }
+.ts-info-box p { font-size: .88rem; line-height: 1.75; color: #4b5563; margin: 0; }
+
+/* Keywords */
+.ts-kw-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.ts-kw-pills a {
+  display: inline-block;
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-radius: 100px;
+  padding: 5px 14px;
+  font-size: .82rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background .15s;
+}
+.ts-kw-pills a:hover { background: #dbeafe; }
+
+/* FAQ */
+.ts-faq { margin-top: 40px; }
+.ts-faq-item { border-bottom: 1px solid var(--line); padding: 22px 0; }
+.ts-faq-item:last-child { border-bottom: none; }
+.ts-faq-q {
+  font-weight: 700;
+  font-size: .98rem;
+  margin: 0 0 10px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.ts-faq-q span { color: #1565c0; font-weight: 800; flex-shrink: 0; }
+.ts-faq-a { font-size: .9rem; line-height: 1.8; color: #4b5563; margin: 0; padding-left: 28px; }
+
+/* Region link grid */
+.ts-region-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 10px;
+  margin-top: 28px;
+}
+.ts-region-grid a {
+  display: block;
+  background: #fff;
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: .85rem;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color .15s, color .15s;
+}
+.ts-region-grid a:hover { border-color: #1565c0; color: #1565c0; }
+.ts-region-grid a.current { border-color: #1565c0; background: #eff6ff; color: #1565c0; font-weight: 700; }
+
+/* CTA */
+.ts-cta-section {
+  background: linear-gradient(135deg, #1565c0 0%, #0f2d4a 100%);
+  padding: 68px 0;
+  text-align: center;
+  color: #fff;
+}
+.ts-cta-section h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; margin: 0 0 12px; }
+.ts-cta-desc { font-size: .98rem; opacity: .85; margin: 0 0 28px; }
+.ts-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  color: #1565c0;
+  font-weight: 800;
+  font-size: 1.1rem;
+  padding: 16px 36px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: transform .2s, box-shadow .2s;
+}
+.ts-cta-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.2); }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ts-hero { padding: 56px 0 44px; }
+  .ts-features-grid { grid-template-columns: repeat(2, 1fr); }
+  .ts-info-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .ts-features-grid { grid-template-columns: 1fr; }
+  .ts-btns { flex-direction: column; align-items: center; }
+  .ts-btn-call, .ts-btn-consult { width: 100%; justify-content: center; max-width: 320px; }
+}
