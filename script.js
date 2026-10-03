@@ -1,4 +1,4 @@
-// 여비POS — script.js
+﻿// 여비POS — script.js
 
 // ── Header scroll shadow
 const header = document.getElementById('header');
@@ -296,7 +296,7 @@ function showCityDetail(sido, city) {
     city + ' 이동식단말기', city + ' 휴대용단말기', city + ' 테이블오더'
   ];
   document.getElementById('rgKeywords').innerHTML =
-    keywords.map(k => `<span class="rg-kw" onclick="location.href='tel:010-2928-3614'">${k}</span>`).join('');
+    keywords.map(k => `<span class="rg-kw" onclick="location.href='tel:010-3946-3614'">${k}</span>`).join('');
 
   updateDetailImg();
   rgDetail.style.display = 'block';
